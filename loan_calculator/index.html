@@ -10,6 +10,11 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+        #loading, #results {
+            display: none;
+        }
+    </style>
 </head>
 <body class="bg-dark">
 <div class="container">
@@ -42,9 +47,9 @@
                     </div>
                 </form>
                 <!-- LOADER HERE -->
-                <!--<div id="loading">-->
-                <!--<img src="img/loading.gif"/>-->
-                <!--</div>-->
+                <div id="loading">
+                <img src="img/loading.gif"/>
+                </div>
                 <!-- RESULTS -->
                 <div id="results" class="pt-4">
                     <h5>Results</h5>
