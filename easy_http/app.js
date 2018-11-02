@@ -10,12 +10,25 @@ const http = new EasyHTTP;
 //
 // });
 
+// const data = {
+//     title: 'Custom Post',
+//     body: 'This is a custom post'
+// };
+//
+// http.post('https://jsonplaceholder.typicode.com/posts', data, function (error, response) {
+//     if(error) {
+//         console.log(response)
+//     } else {
+//         console.log(response)
+//     }
+// });
+
 const data = {
     title: 'Custom Post',
     body: 'This is a custom post'
 };
 
-http.post('https://jsonplaceholder.typicode.com/posts', data, function (error, response) {
+http.put('https://jsonplaceholder.typicode.com/posts/2', data, function (error, response) {
     if(error) {
         console.log(response)
     } else {
