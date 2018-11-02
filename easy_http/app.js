@@ -23,12 +23,20 @@ const http = new EasyHTTP;
 //     }
 // });
 
-const data = {
-    title: 'Custom Post',
-    body: 'This is a custom post'
-};
+// const data = {
+//     title: 'Custom Post',
+//     body: 'This is a custom post'
+// };
+//
+// http.put('https://jsonplaceholder.typicode.com/posts/2', data, function (error, response) {
+//     if(error) {
+//         console.log(response)
+//     } else {
+//         console.log(response)
+//     }
+// });
 
-http.put('https://jsonplaceholder.typicode.com/posts/2', data, function (error, response) {
+http.delete('https://jsonplaceholder.typicode.com/posts/1', function (error, response) {
     if(error) {
         console.log(response)
     } else {
