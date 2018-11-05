@@ -10,7 +10,7 @@ class Storage {
         }
 
         if(localStorage.getItem('state') !== null) {
-            this.city = localStorage.getItem('state');
+            this.state = localStorage.getItem('state');
         }
 
         return {
