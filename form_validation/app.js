@@ -14,9 +14,17 @@ function validateName(e) {
         e.target.classList.remove('is-invalid');
     }
 }
-function validateZip() {
+function validateZip(e) {
+    const zip = e.target.value;
+    const re = /^[0-9]{2}-[0-9]{3}$/;
 
+    if(!re.test(zip)) {
+        e.target.classList.add('is-invalid');
+    } else {
+        e.target.classList.remove('is-invalid');
+    }
 }
+
 function validateEmail() {
     //
 }
