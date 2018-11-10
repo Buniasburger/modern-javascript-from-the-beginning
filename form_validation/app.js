@@ -36,6 +36,13 @@ function validateEmail(e) {
         e.target.classList.remove('is-invalid');
     }
 }
-function validatePhone() {
-    //
+function validatePhone(e) {
+    const phone = e.target.value;
+    const re = /^(\+\d{2}[\s-])?(\d{3}[\s\-]?){2}(\d{3})$/;
+
+    if(!re.test(phone)) {
+        e.target.classList.add('is-invalid');
+    } else {
+        e.target.classList.remove('is-invalid');
+    }
 }
