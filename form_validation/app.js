@@ -25,8 +25,16 @@ function validateZip(e) {
     }
 }
 
-function validateEmail() {
-    //
+function validateEmail(e) {
+    const email = e.target.value;
+    const re = /^.*@\w+\.\w+/;
+    // const re = /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/;
+
+    if(!re.test(email)) {
+        e.target.classList.add('is-invalid');
+    } else {
+        e.target.classList.remove('is-invalid');
+    }
 }
 function validatePhone() {
     //
